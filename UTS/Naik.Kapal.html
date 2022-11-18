@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .container {
+        @apply max-w-[90%] mx-auto;
+      }
+
+      .btn {
+        @apply bg-[#212121] text-white px-5 py-3 text-center;
+      }  
+
+      .btn.rounded {
+        @apply rounded-full;
+      }
+
+      .home::before {
+        /* content: url("./assets/scratch.svg");
+        position: absolute;
+        bottom: -18px; */
+      }
+
+      .active {
+        @apply block;
+      }
+    }
+  </style>
+  <title>Mangcoding Naik Kapal</title>
+</head>
+<!-- Body Awal Header -->
+<body>
+  <header class="">
+    <nav class="container relative flex py-5 items-center justify-between lg:mx-20 md:mx-10 mx-8">
+        <div>
+          <a href="#" class="text-logo font-logo text-[1.5rem] font-bold ">Naik.<span class="text-white">kapal</span></a>
+        </div>
+        <ul
+          class="ml-auto lg:flex lg:space-x-8 lg:space-y-0 text-white lg:items-center lg:z-auto lg:static lg:bg-transparent lg:h-0 lg:w-auto lg:pl-0 lg:opacity-100 space-x-0 space-y-8 z-10 absolute bg-white/20 backdrop-blur-md w-full py-10 lg:py-0 text-[1.2rem] lg:text-[1rem] px-7 opacity-0 top-[-400px] transition-all ease-in duration-500 left-0">
+          <li class="list-none">
+            <a href="home.html" class="hover:text-button">Home</a>
+          </li>
+          <li class="list-none">
+            <a href="home.html" class="hover:text-button">Destination</a>
+          </li>
+          <li class="list-none">
+            <a href="home.html" class="hover:text-button">Choose Class</a>
+          </li>
+          <li class="list-none">
+            <a href="#" class="hover:text-button">Manage</a>
+          </li>
+          <li class="list-none">
+            <a href="#" class="hover:text-button">About Us</a>
+          </li>
+          <div class="lg:flex block lg:items-center lg:pl-10 space-x-8">
+            <a href="#" class="hover:text-button">Login</a>
+            <a href="#" class=" py-2 px-5 rounded-sm">
+              <button class=" px-5 py-3 bg-[#8992FA] hover:bg-[#FFD31D]">Sign Up</button></a>
+          </div>
+        </ul>
+        <div id="toggle" class="text-white text-[2rem] lg:hidden absolute right-10 mt-2">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </div>
+      </nav>
+  </header>
+  <!-- Akhiran Header -->
+    <!-- Bagian hero -->
+    <section>
+
+      <div class="hero-section md:mt-[-110px] mt-[-100px] mb-40 w-full h-[80vh] z-[-20] relative"
+      style="background: url('./assets/bg-hero.jpeg'); background-position: center; background-size: cover;">
+      <div class="w-full h-[80vh] absolute top-0 left-0"
+      style="background: linear-gradient(90deg, #000000 -46.92%, rgba(0, 0, 0, 0) 100%)"></div>
+      <div class="content py-[16rem] lg:mx-20 mx-8 font-content text-white relative z-30 space-y-6">
+        <h1 data-aos="fade-up"
+        data-aos-duration="1000" class="text-[2.5rem] md:text-[3rem] font-bold lg:w-[40%] md:w-[60%] w-[95%]">Let's explore the World with us
+      </h1>
+      <p data-aos="fade-up"
+      data-aos-duration="1200" class="text-[.9rem] text-[#d8d8d8] md:w-[40%] lg:w-[30%]">Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+      Vestibulum in purus eget tellus aliquam egestas.</p> 
+      <button class=" px-5 py-3 bg-[#8992FA] hover:bg-[#FFD31D]">Sign Up</button>
+            </div>
+          </div>
+</section>
+
+      <!-- akhir bagian hero -->
+
+      <!-- Awal Grid -->
+      <div class="grid grid-cols-4 font-bold py-8 px-5 gap-5 rounded-sm">
+        <div class="col-span-3 grid grid-cols-1 content-center flex-col justify-center">
+          <h1 class="text-yellow-500 text-title font-bold px-5">JUST FOR THOSE WHO USE US</h1>
+          <p class="text-bold font-body px-5">Some advantages for You to Choose our flights</p>
+          <p class="text-[.9rem] text-[#d8d8d8] md:w-[40%] lg:w-[30%] px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium facilisis mollis. Donec nec auctor tortor. In varius ipsum sit amet elit congue, mattis bibendum nibh feugiat.</p>
+        </div>  
+      </div>
+
+      <!-- Awal Profil -->
+      <div class="flex space-x-3 items-center pt-8 px-7">
+        <img data-aos="zoom-in" data-aos-duration="1600" src="./assets/smoke.png" alt="">
+        <div data-aos="fade-up" data-aos-duration="1600">
+          <h4 class="font-semibold text-[1.1rem]">Wicaksana.Adi</h4>
+          <p class="text-content text-gray-500 text-[.9rem]">UI/UX Designer</p>
+        </div>
+      </div>
+      <!-- Akhir Profil-->
+
+      <!-- Awal Penilaian -->
+      <div data-aos="fade-up" data-aos-duration="1600" class="flex items-center space-x-12 pt-10">
+        <div>
+          <h4 class="text-logo text-[1.8rem] font-bold md-12 px-7">+2,000</h4>
+          <p class="text-center text-content text-[.9rem]">App User</p>
+        </div>
+        <div>
+          <h4 class="text-logo text-[1.8rem] font-bold">+1,000</h4>
+          <p class="text-center text-content text-[.9rem]">Destination</p>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Penilaian -->
+
+
+  
+  <!--Awal section-->
+<section class="banner container relative mt-5 mb-20 bg-[#EFF0FF] min-h-[300px] items-center justify-center">
+  <div class="flex text-center justify-center flex-col space-y-3 relative z-40 p-6">
+    <h2 class="text-x1 text-yellow-500">JUST FOR THOSE WHO USE US</h2>
+    <h3 class="text-3xl font-bold text-center">Progres In Our Application</h3>
+    <p class="text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium facilisis mollis.</p>
+    <a href="#" class=" py-2 px-5 rounded-sm">
+      <button class=" px-5 py-3 bg-[#8992FA] hover:bg-[#FFD31D]">Sign Up</button></a>
+  </div>
+</section>
+<!--Akhir section-->
+
+<!--Awal Coments-->
+<div class="text-center container py-20">
+  <span class="text-yellow-500 text-xl">JUST FOR THOSE WHO USE US</span>
+    <h3 class="text-3xl font-bold text-center">Comment fosr this Apps</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 gap-y-8">
+      <div>
+        <img src="./assets/Thomas.png" alt="">
+        <h1 class="text-bold text-center">Thomas Alfhabeth</h1>
+      </div>
+</div>
+
+<!--Akhiir Coment-->
+
+
+<!-- Awal Footer -->
+<section class="bg-[#212121] text-white py-14">
+        <div
+          class="container flex flex-col space-y-5 md:flex-row md:space-y-0 items-center md:items-start md:justify-center space-x-12">
+          <div class="flex flex-col">
+            <div class="flex items-center gap-5 mb-5">
+              <img src="./assets/Logo.svg" alt="" width="40">
+              <a href="#" class="text-logo font-logo text-[1.5rem] font-bold ">Naik.<span class="text-white">kapal</span></a>
+            </div>
+    
+            <p class="max-w-[380px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium facilisis mollis. Donec nec auctor tortor. In varius ipsum sit amet elit congue, mattis bibendum nibh feugiat.
+            </p>
+          </div>
+    
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3 gap-y-8">
+            <div>
+              <p class="font-bold py-2">About</p>
+              <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                <li>Progres</li>
+                <li>Comment</li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-bold py-2">Destination</p>
+              <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                <li>Waters</li>
+                <li>Mainland</li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-bold py-2">Choose Class</p>
+              <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                <li>Economy</li>
+                <li>Executive</li>
+                <li>VVIP</li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-bold py-2">Contact Us</p>
+              <ul class="flex flex-col gap-2 space-y-1 mt-3">
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+                <li>Log In</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+</section>
+
+      <footer class="bg-[#212121] py-5">
+        <p class=" text-white px-7 ">Naik.Kapal All Right Reseived.</p>
+        <ul class="flex gap-5 mt-5 px-7">
+          <li>
+            <img src="./assets/V1.png" alt="">
+          </li>
+          <li>
+            <img src="./assets/V2.png" alt="">
+          </li>
+          <li>
+            <img src="./assets/V3.png" alt="">
+          </li>
+          <li>
+            <img src="./assets/V4.png" alt="">
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+  
+</html>
+<!-- Akhir Footer -->
+  
